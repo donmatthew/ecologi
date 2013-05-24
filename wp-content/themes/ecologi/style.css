@@ -67,7 +67,6 @@ ul {
 	list-style: none;
 }
 li {
-	float:left;
 	margin:5px;
 }
 .count {
@@ -164,6 +163,9 @@ small {
 img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
+}
+.header {
+	margin-top:50px;
 }
 .button {
 	display: block;
@@ -569,8 +571,16 @@ a:hover {
 
 /* Header */
 .site-header {
-	padding: 24px 0;
-	padding: 1.714285714rem 0;
+/*	padding: 24px 0;
+	padding: 1.714285714rem 0;*/
+		position:fixed;
+		height: 50px;
+		background:#F0F0F0;
+		width:100%;
+		top:0;
+		left:0;
+		z-index: 100;
+		border-bottom:1px #b0b0b0 solid;
 }
 .site-header h1,
 .site-header h2 {
@@ -698,8 +708,8 @@ footer[role="contentinfo"] {
 	line-height: 2;
 	max-width: 960px;
 	max-width: 68.571428571rem;
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
+/*	margin-top: 24px;
+	margin-top: 1.714285714rem;*/
 	margin-left: auto;
 	margin-right: auto;
 	padding: 24px 0;
@@ -1506,11 +1516,12 @@ width: 100%;
 	}
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
-		border-bottom: 1px solid #C77826;
-		border-top: 0px solid #ededed;
+	/*	border-bottom: 1px solid #C77826;
+		border-top: 0px solid #ededed;*/
 		display: inline-block !important;
-		text-align: left;
 		width: 100%;
+		padding:0;
+		margin:0;
 	}
 	.main-navigation ul {
 		margin: 0;
@@ -1636,19 +1647,19 @@ width: 100%;
 @media screen and (min-width: 960px) {
 	body {
 		background-color: #636F57;
-		background-image:url('images/bg.png');
+		background-image:url('images/bg9.png');
 	}
 	body .site {
 		/*padding: 0 40px;
 		padding: 0 2.857142857rem;*/
 		margin-top: 48px;
-		margin-top: 3.428571429rem;
+		margin-top: 5em;
 		margin-bottom: 48px;
 		margin-bottom: 3.428571429rem;
 		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 		-moz-border-radius: 15px;
 		border-radius: 15px;
-		background-color:#5A6351;
+		background-color:#FFFFFF;
 		
 	}
 	body.custom-background-empty {
@@ -1695,9 +1706,15 @@ width: 100%;
 		position: relative !important;
 	}
 	.site-header {
-		margin-bottom: 72px;
+	/*	margin-bottom: 72px;
 		margin-bottom: 5.142857143rem;
-		text-align: left;
+		text-align: left;*/
+		position:fixed;
+		height: 200px;
+		background:#F0F0F0;
+		width:100%;
+		top:0;
+		z-index: 100;
 	}
 	.site-header h1 {
 		font-size: 21pt;
