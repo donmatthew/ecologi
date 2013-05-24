@@ -12,16 +12,17 @@
 ?>
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
+<center>	<hr style="background-color:#000;width:70%;"></center>
 		<div class="site-info">
 			<a href="http://localhost/webshop/">Kunder</a> - 
 			<a href="http://localhost/webshop/">Tjänster</a> - 
 			<a href="http://localhost/webshop/">Support</a> -
-			<a href="http://localhost/webshop/">Kontakt</a>
-			<a href="http://localhost/webshop/">Dev Blog</a> -
+			<a href="http://localhost/webshop/">Kontakt</a> -
+			<a href="http://localhost/webshop/">Dev Blog</a> 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>

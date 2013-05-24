@@ -39,6 +39,7 @@
 			<center><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?></center>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+<div id="pageholder">
 <div id="page" class="hfeed site">
 	<div class="header">
 		<hgroup>

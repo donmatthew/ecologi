@@ -10,6 +10,7 @@
  * @since Twenty Twelve 1.0
  */
 ?>
+<center>	<hr style="background-color:#000;width:70%;"></center>
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
@@ -21,7 +22,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>
