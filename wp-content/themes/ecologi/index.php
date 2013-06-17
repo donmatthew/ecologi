@@ -60,6 +60,9 @@ get_header(); ?>
 		<?php endif; // end have_posts() check ?>
 
 		</div><!-- #content -->
+		<div id="sidebar">
+			tjena
+		</div>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>

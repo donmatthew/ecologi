@@ -40,7 +40,7 @@ get_header(); ?>
 
 				<div class="entry-content">
 					<p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'twentytwelve' ), admin_url( 'post-new.php' ) ); ?></p>
-				</div><!-- .entry-content -->
+				</div><!-- .entry-content --> 
 
 			<?php else :
 				// Show the default message to everyone else.
@@ -60,6 +60,9 @@ get_header(); ?>
 		<?php endif; // end have_posts() check ?>
 
 		</div><!-- #content -->
+		<div id="sidebar">
+			tjena
+		</div>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>

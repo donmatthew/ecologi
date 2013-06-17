@@ -70,6 +70,18 @@ body {
 	max-width:100%;
 	background:#ffffff;
 }
+#content {
+	float:left;
+	max-width:640px;
+	width:640px;
+}
+#sidebar {
+	padding:0px 5px 10px 10px;
+	float:left;
+	max-width:130px;
+	margin-left:120px;
+	margin-top:-2px;
+}
 ol,
 ul {
 	list-style: none;
@@ -212,11 +224,11 @@ img {
 .entry-content th,
 .comment-content th {
 	font-size: 12px;
-	font-size: 0.785714286rem;
-	line-height: 2.181818182;
+	font-size: 1.785714286rem;
+	line-height: 1.181818182;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #636363;
+	color: #505050;
 }
 
 /* Shared Post Format styling */
@@ -539,6 +551,8 @@ a:hover {
 .widget-header {
 	position:relative;
 	float:right;
+	margin-top:17px;
+	left:5px;
 }
 /* Assistive text */
 .assistive-text,
@@ -590,6 +604,7 @@ a:hover {
 		left:0;
 		z-index: 100;
 		border-bottom:1px #b0b0b0 solid;
+		box-shadow: 0px 2px 3px #888;
 }
 .site-header h1,
 .site-header h2 {
@@ -720,19 +735,22 @@ footer[role="contentinfo"] {
 	text-align:center;
 /*	margin-top: 24px;
 	margin-top: 1.714285714rem;*/
-	margin-top:-30px;
+	margin-top:-5px;
+	margin-bottom:15px;
 	margin-left: auto;
 	margin-right: auto;
 /*	padding: 12px 0;
 	padding: 1.114285714rem 0;*/
 }
 footer[role="contentinfo"] a {
-	color: #F77826;
+	font-size:14px;
+	color: #F07826;
 	text-decoration:none;
 	font-weight:bold;
 }
 footer[role="contentinfo"] a:hover {
-	color: #F77826;
+	font-size:14px;
+	color: #F07826;
 	text-decoration:none;
 	font-weight:bold;
 }
@@ -936,7 +954,7 @@ article.sticky .featured-post {
 .comment-content dfn,
 .entry-content acronym,
 .comment-content acronym {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px solid #666;
 	cursor: help;
 }
 .entry-content address,
@@ -1007,11 +1025,7 @@ img.aligncenter {
 	padding: 6px 10px 6px 0;
 }
 .site-content article {
-	border-bottom: 1px dotted #000000;
-	margin-bottom: 72px;
-	margin-bottom: 5.142857143rem;
-	padding-bottom: 24px;
-	padding-bottom: 1.714285714rem;
+/*	border-bottom: 1px solid #000000;*/
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -1604,8 +1618,14 @@ width: 100%;
 		display: none;
 	}
 	.entry-header .entry-title {
-		font-size: 22px;
-		font-size: 1.571428571rem;
+	/*	font-size: 22px;
+		font-size: 1.571428571rem;*/
+		font-size: 12px;
+		font-size: 1.785714286rem;
+		line-height: 1.181818182;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #505050;
 	}
 	#respond form input[type="text"] {
 		width: 46.333333333%;
@@ -1756,6 +1776,7 @@ width: 100%;
 		display: none;
 	}
 	.wrapper {
+		max-width:600px;
 		border-top: none;
 		box-shadow: none;
 	}

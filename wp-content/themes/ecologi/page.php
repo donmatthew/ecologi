@@ -23,6 +23,12 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
+		<div id="sidebar">
+				<ul class="sidebar">
+					<?php dynamic_sidebar( 'right-sidebar' ); ?>
+				</ul>
+			
+		</div>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>

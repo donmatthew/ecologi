@@ -202,7 +202,7 @@ add_filter( 'wp_page_menu_args', 'twentytwelve_page_menu_args' );
  * @since Twenty Twelve 1.0
  */
 function twentytwelve_widgets_init() {
-	register_sidebar( array(
+/*	register_sidebar( array(
 		'name' => __( 'Main Sidebar', 'twentytwelve' ),
 		'id' => 'sidebar-1',
 		'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve' ),
@@ -221,15 +221,17 @@ function twentytwelve_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+ */
 	register_sidebar( array(
-		'name' => __( 'Second Front Page Widget Area', 'twentytwelve' ),
+		'name' => __( 'right-sidebar', 'twentytwelve' ),
 		'id' => 'sidebar-3',
-		'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
+		'description' => __( 'Right sidebar', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
 	) );
+
 	register_sidebar( array(
 		'name' => __( 'Header Top Widget Area', 'twentytwelve' ),
 		'id' => 'widget-header',
@@ -478,4 +480,31 @@ function remove_loop_button(){
 	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 }
 add_action('init','remove_loop_button');
+
+function fb_move_admin_bar() {
+    echo '
+    <style type="text/css">
+    body { 
+    margin-top: -28px;
+    padding-bottom: 28px;
+    }
+    body.admin-bar #wphead {
+       padding-top: 0;
+    }
+    body.admin-bar #footer {
+       padding-bottom: 28px;
+    }
+    #wpadminbar {
+        top: auto !important;
+        bottom: 0;
+    }
+    #wpadminbar .quicklinks .menupop ul {
+        bottom: 28px;
+    }
+    </style>';
+}
+// on backend area
+add_action( 'admin_head', 'fb_move_admin_bar' );
+// on frontend area
+add_action( 'wp_head', 'fb_move_admin_bar' );
 

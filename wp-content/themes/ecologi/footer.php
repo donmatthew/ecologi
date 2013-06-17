@@ -10,7 +10,7 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-<center>	<hr style="background-color:#000;width:70%;"></center>
+<center>	<hr style="background-color:#000;width:55%;"></center>
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
